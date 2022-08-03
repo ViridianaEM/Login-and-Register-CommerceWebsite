@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Product";
+}
+<!-- Additional CSS Files -->
+<link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.css">
+<link rel="stylesheet" href="~/Content/css/templatemo-hexashop.css">
+
+<link rel="stylesheet" href="~/Content/css/owl-carousel.css">
+
+<link rel="stylesheet" href="~/Content/lightbox.css">
+
+<!--TemplateMo 571 Hexashop https://templatemo.com/tm-571-hexashop-->
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="~/Content/css/Login.css" asp-append-version="true" />
+
+<body>
+    <!-- ***** Product Area Starts ***** -->
+    <section class="section" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="left-images">
+                        <img src="~/img/Men/men-04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="right-content">
+                        <h4>School Collection</h4>
+                        <span class="price">$100.00</span>
+                        
+                        <span>New merch! Back to school collection</span>
+                        
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Product Area Ends ***** -->
+    <!-- jQuery -->
+    <script src="~/Scripts/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/Scripts/js/popper.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/Scripts/js/owl-carousel.js"></script>
+    <script src="~/Scripts/js/accordions.js"></script>
+    <script src="~/Scripts/js/datepicker.js"></script>
+    <script src="~/Scripts/js/scrollreveal.min.js"></script>
+    <script src="~/Scripts/js/waypoints.min.js"></script>
+    <script src="~/Scripts/js/jquery.counterup.min.js"></script>
+    <script src="~/Scripts/js/imgfix.min.js"></script>
+    <script src="~/Scripts/js/slick.js"></script>
+    <script src="~/Scripts/js/lightbox.js"></script>
+    <script src="~/Scripts/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="~/Scripts/js/custom.js"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>

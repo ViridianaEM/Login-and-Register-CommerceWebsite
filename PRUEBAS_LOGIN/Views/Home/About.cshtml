@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+<title>Men</title>
+
+
+<!-- Additional CSS Files -->
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+
+<link rel="stylesheet" href="/css/templatemo-hexashop.css">
+
+<link rel="stylesheet" href="/css/owl-carousel.css">
+
+<link rel="stylesheet" href="/css/lightbox.css">
+<body>
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>About Our Company</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** About Area Starts ***** -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-image">
+                        <img src="/img/service-01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <h4>About Us &amp; Our Skills</h4>
+                        <span>We are a company dedicated to fashion, our mission is to keep our users abreast of new trends, as well as keep them accessible to everyone.</span>
+                        <div class="quote">
+                            <p>This is a 100% free Fast-Fashion company.</p>
+                        </div>
+                        <p>At Fashion land, we believe that our workers' and clients' integrity and well-being are paramount.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** About Area Ends ***** -->
+    <!-- jQuery -->
+    <script src="~/Scripts/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/Scripts/js/popper.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/Scripts/js/owl-carousel.js"></script>
+    <script src="~/Scripts/js/accordions.js"></script>
+    <script src="~/Scripts/js/datepicker.js"></script>
+    <script src="~/Scripts/js/scrollreveal.min.js"></script>
+    <script src="~/Scripts/js/waypoints.min.js"></script>
+    <script src="~/Scripts/js/jquery.counterup.min.js"></script>
+    <script src="~/Scripts/js/imgfix.min.js"></script>
+    <script src="~/Scripts/js/slick.js"></script>
+    <script src="~/Scripts/js/lightbox.js"></script>
+    <script src="~/Scripts/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="~/Scripts/js/custom.js"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+</body>
+
+

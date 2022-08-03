@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Fashion Land </title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.css">
+
+    <link rel="stylesheet" href="~/Content/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="~/Content/owl-carousel.css">
+
+    <link rel="stylesheet" href="~/Content/lightbox.css">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/Content/css/Login.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/Logo hueso.png" style="width:50px; height:50px;" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1" style="align-items: center; justify-content: space-around;">
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Home", "Index", "Home")</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Men's", "Men", "Home")</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Women's", "Women", "Home")</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("About Us", "About", "Home")</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Contact", "Contact", "Home")</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Products", "Products", "Home")</a>
+                        </li>
+                        
+                        <li class="nav-item nav-link">
+                            <a>@Html.ActionLink("Log Out", "Login", "Acceso")</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="/img/Logo dark.png" style="width:50%; height:50%;" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                            <li><a href="#">contact@fashionland.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men's Shopping</a></li>
+                        <li><a href="#">Women's shopping'</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Our Team</h4>
+                    <ul style="color:white">
+                        <li text-light>Viridiana</li>
+                        <li text-light>Miguel Angel</li>
+                        <li text-light>Andrea</li>
+                        <li text-light>Marco</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 Fashion Land. All Rights Reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
+
+

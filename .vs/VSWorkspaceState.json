@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PRUEBAS_LOGIN",
+    "\\PRUEBAS_LOGIN\\Content",
+    "\\PRUEBAS_LOGIN\\Content\\css",
+    "\\PRUEBAS_LOGIN\\Controllers",
+    "\\PRUEBAS_LOGIN\\Models",
+    "\\PRUEBAS_LOGIN\\Views",
+    "\\PRUEBAS_LOGIN\\Views\\Acceso",
+    "\\PRUEBAS_LOGIN\\Views\\Home",
+    "\\PRUEBAS_LOGIN\\Views\\Shared"
+  ],
+  "SelectedNode": "\\PRUEBAS_LOGIN\\Controllers\\AccesoController.cs",
+  "PreviewInSolutionExplorer": false
+}
